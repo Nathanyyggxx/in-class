@@ -5,12 +5,12 @@ phases:
     runtime-versions:
       nodejs: 16
     commands:
-      - echo install
+      - npm install
   build:
     commands:
-      - echo run build
+      - npm run build
 
 artifacts:
   files:
     - '**/*'
-  base-directory: .
+  base-directory: dist
